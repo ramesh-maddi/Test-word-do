@@ -4,6 +4,7 @@ do
         sleep 1
 done
 ts=`date +"%s"`
-mkdir TestDirectory$ts
-mv testfile* TestDirectory$ts
+mkdir TestDirectory'$ts'
+mv testfile* TestDirectory'$ts'
 zip TestDirectory'$ts'.zip TestDirectory'$ts'
+
